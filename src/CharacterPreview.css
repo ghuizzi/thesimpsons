@@ -1,0 +1,7 @@
+.CharacterPreview{
+    width: 100%;
+    position: relative;
+  }
+  .CharacterPreview img{
+    width: 70%;
+  }
