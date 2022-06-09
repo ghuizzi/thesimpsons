@@ -1,0 +1,16 @@
+.body{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .topBar{
+    width: 100%;
+    background-color: rgb(243, 247, 55);
+    padding: 24px 48px 12px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .topBar img{
+    width: 100px;
+    
+  }

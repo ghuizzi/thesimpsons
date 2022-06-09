@@ -1,3 +1,5 @@
+// import gorgon from "./img/gorgon.png";
+// import gatos from "./img/gatos.png";
 const Character = {
   name: "Maggie Simpsons",
   description:
@@ -5,7 +7,15 @@ const Character = {
   characterOptions: [
     {
       styleName: "Character1",
-      img: "./img/gordon.png",
+      pic: "./img/gorgon.png",
+    },
+    {
+      styleName: "Character2",
+      pic: "./img/gatos.png",
+    },
+    {
+      styleName: "Character3",
+      pic: "./img/berns.png",
     },
   ],
 };

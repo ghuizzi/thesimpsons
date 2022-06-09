@@ -2,13 +2,27 @@ import React from "react";
 import gorgon from "./img/gordon.png";
 import berns from "./img/berns.png";
 import gatos from "./img/gatos.png";
-import Character from "./Character";
 import classes from "./App.module.css";
 const CharacterDetails = (props) => {
+  const Options = props.data.characterOptions.map((item, pos) => {
+    const classArr = [classes.CharacterImage];
+    if (pos === 0) {
+      classArr.push(classes.SelectedCharacterImage);
+    }
+    return (
+      <img
+        key={pos}
+        className={classes.CharacterImage}
+        src={item.pic}
+        alt={item.styleName}
+      />
+    );
+  });
+  console.log(props.data);
   return (
     <div>
-      <h1 className={classes.CharacterTittle}>{Character.name}</h1>
-      <p className={classes.CharacterDescription}>{Character.description}</p>
+      <h1 className={classes.CharacterTittle}>{props.data.tittle}</h1>
+      <p className={classes.CharacterDescription}>{props.data.description}</p>
       <h3 className={classes.SectionHeading}>Select Character</h3>
       <div>
         <img
